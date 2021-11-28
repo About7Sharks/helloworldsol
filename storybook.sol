@@ -16,6 +16,11 @@ contract Story {
         story.push(word);
     }
 
+    // Chance a word in the story array
+    function editWord(string memory word, uint place) public {
+        story[place]=word;
+    }
+
     // Return all the words in the story array
     function read() public view returns (string[] memory) {
         return story;
