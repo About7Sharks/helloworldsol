@@ -1,0 +1,173 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "vaultId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "VaultDistrubution",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "vaultId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "addAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "address[]",
+						"name": "users",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "initialAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "createVault",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "vaultId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "vaultId",
+						"type": "uint256"
+					}
+				],
+				"name": "distribute",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "vaults",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "creator",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity/Vault.sol": "VaultContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity/Vault.sol": {
+			"keccak256": "0xf82c21e66fb554ec0cfe98dd23ebe4e4c1820ae4c11484e0bfad66b11c7b1d09",
+			"license": "Unlicense",
+			"urls": [
+				"bzz-raw://10d6d8594e9435523b72e907b7baec8060ca9d67bb126fe04a1bcc5387df038a",
+				"dweb:/ipfs/QmXbZXW1qfhF9Pmn5f4R8ixspeYKCZtPKaVkmwJZzLFTXf"
+			]
+		}
+	},
+	"version": 1
+}

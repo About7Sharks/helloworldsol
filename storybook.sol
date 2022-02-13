@@ -1,4 +1,6 @@
-// This contract allows a group to tell a story onchain
+// This contract allows a group to tell a story on chain
+// SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.0;
 
 contract Story {
