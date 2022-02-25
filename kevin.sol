@@ -10,7 +10,6 @@ contract KEVIN {
     }
     uint256 totalVaults;
     mapping(uint256 => Vault) public vaults;
-    mapping(address => bool) public blacklisted;
 
     function createVault(
         string memory name,
